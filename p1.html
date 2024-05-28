@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1</title>
+    <link rel="stylesheet" href="single.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+     <!----------header--------->
+     <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="YCH.jpeg" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">All Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="cart.html"><img src="cart.png" width="20px" ></a></li>
+                        <li><a href="member.html"><img src="pngegg.png" width="20px"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+     <!----------B1--------->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="p1.jpg" width="100%" id="productImg" class="shake-image">
+                
+               
+            </div>
+            <div class="col-2">
+                <h1>奶油熊桌上花束</h1>
+                <h4>NT$300</h4>
+                <a href="cart.html" class="btn">加入購物車</a>
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="p1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="p1-2.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <script>
+        var productImg = document.getElementById('productImg');
+        var smallImg = document.getElementsByClassName('small-img');
+
+        for (let i = 0; i < smallImg.length; i++) {
+            smallImg[i].onclick = function() {
+                productImg.src = smallImg[i].src;
+            }
+        }
+     </script>
+
+
+     <!----------footer--------->
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <img src="android.png" >  <img src="apple.png" alt="">
+                <p>Download App for Android and ios mobile phone.</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="YCH-1.png" >
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>LINE</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div> 
+</body>
+</html>

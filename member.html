@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>member</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!----------header--------->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="YCH.jpeg" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">All Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="cart.html"><img src="cart.png" width="20px" ></a></li>
+                        <li><a href="member.html"><img src="pngegg.png" width="20px"></a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+        <!----------member--------->
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="vase.png" width="100%">
+                    </div>
+
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">登入</span>
+                                <span onclick="register()">註冊</span>
+                                <hr id="Indicator">
+                            </div>
+                            <form id="loginform">
+                                <input type="text" placeholder="使用者ID">
+                                <input type="password" placeholder="密碼">
+                                <button type="submit" class="btn">登入</button>
+                                <a href="">忘記密碼</a>
+                            </form>
+                            <form id="regform">
+                                <input type="text" placeholder="使用者ID">
+                                <input type="email" placeholder="信箱">
+                                <input type="password" placeholder="密碼">
+                                <button type="submit" class="btn">註冊</button>
+                            </form>
+                        </div>
+                        <script>
+                            var loginform = document.getElementById("loginform");
+                            var regform = document.getElementById("regform");
+                            var Indicator = document.getElementById("Indicator");
+                            function register(){
+                                regform.style.transform="translateX(0px)";
+                                loginform.style.transform="translateX(0px)";
+                                Indicator.style.transform="translateX(100px)";
+                            }
+                            function login(){
+                                regform.style.transform="translateX(300px)";
+                                loginform.style.transform="translateX(300px)";
+                                Indicator.style.transform="translateX(0px)";
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------footer--------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <img src="android.png"> <img src="apple.png" alt="">
+                        <p>Download App for Android and ios mobile phone.</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="YCH-1.png">
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>LINE</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</body>
+
+</html>

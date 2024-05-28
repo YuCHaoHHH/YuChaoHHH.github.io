@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="YCH.jpeg" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">All Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="cart.html"><img src="cart.png" width="20px"></a></li>
+                        <li><a href="member.html"><img src="pngegg.png" width="20px"></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!----------contact--------->
+            <div class="contact-page">
+                <div class="container1">
+                    <div class="form-container1">
+                        <div class="form-btn1">
+                            <span onclick="showForm('pickup')">預約上門回收</span>
+                            <span onclick="showForm('send')">我要寄件回收</span>
+                            <span onclick="showForm('purchase')">購買相關問題</span>
+                            <span onclick="showForm('customer-service')">預約客服</span>
+                        </div>
+                        <hr id="Indicator1">
+                        <div class="form-wrapper">
+                            <form id="pickup" class="active1">
+                                <div class="form-left">
+
+                                    <input type="text" placeholder="使用者ID">
+                                    <input type="text" placeholder="聯絡電話">
+                                    <input type="email" placeholder="Email">
+                                    <textarea placeholder="備註"></textarea>
+                                    <div class="file-input1">
+                                        <input type="file" id="pickup-file" style="display:none;">
+                                        <label for="pickup-file">上傳文件</label>
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn1">提交</button>
+                                </div>
+                                <div class="form-right">
+                                    <h3>上門回收須知</h3>
+                                    <br>
+                                    <p>
+                                    <ul>
+                                        <li>請先登入帳號，再預約上門回收的表單。</li>
+                                        <li>備註中麻煩寫上方便聯絡的時間。</li>
+                                        <li>請上傳預回收的物件，帶團隊評估是否回收。</li>
+                                        <li>上門回收服務不收取任何費用，但實物若與照片相差甚多，以致於無法收購，我們將會酌收NT$200的交通費用。</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </form>
+                            <form id="send">
+                                <div class="form-left">
+
+                                    <input type="text" placeholder="使用者ID">
+                                    <input type="text" placeholder="聯絡電話">
+                                    <input type="email" placeholder="Email">
+                                    <textarea placeholder="備註"></textarea>
+                                    <div class="file-input1">
+                                        <input type="file" id="send-file" style="display:none;">
+                                        <label for="send-file">上傳文件</label>
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn1">提交</button>
+                                </div>
+                                <div class="form-right">
+                                    <h3>寄件回收須知</h3>
+                                    <br>
+                                    <p>
+                                    <ul>
+                                        <li>請先登入帳號，再填寫寄件回收須知。</li>
+                                        <li>備註中麻煩寫上方便聯絡的時間。</li>
+                                        <li>請上傳預回收的物件，帶團隊評估是否回收，以便回收順利。</li>
+                                        <li>依照正常收購流程，我們將會將郵寄費用與回收款項一併打款。</li>
+                                        <li>若是未詢問就寄出，且最後沒有達成回收收購，我們將不另付郵寄費用。</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </form>
+                            <form id="purchase">
+                                <div class="form-left">
+
+                                    <input type="text" placeholder="使用者ID">
+                                    <input type="text" placeholder="聯絡電話">
+                                    <input type="email" placeholder="Email">
+                                    <textarea placeholder="備註"></textarea>
+                                    <div class="file-input1">
+                                        <input type="file" id="purchase-file" style="display:none;">
+                                        <label for="purchase-file">上傳文件</label>
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn1">提交</button>
+                                </div>
+                                <div class="form-right">
+                                    <h3>購買相關須知</h3>
+                                    <br>
+                                    <p>
+                                    <ul>
+                                        <li>二手商品一律出貨後不退不換。</li>
+                                        <li>若對商品有所疑慮，可以洽詢客服瀏覽物品的影片、全貌。</li>
+                                        <li>若是已購買卻尚未出貨，可以填此表單，我們將快速為您追蹤。</li>
+                                        <li>若有其他相關疑慮，歡迎填寫表單，團隊將會快速的協助您。</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </form>
+                            <form id="customer-service">
+                                <div class="form-left">
+
+
+                                    <input type="text" placeholder="使用者ID">
+                                    <input type="text" placeholder="聯絡電話">
+                                    <input type="email" placeholder="Email">
+                                    <textarea placeholder="備註"></textarea>
+                                    <br>
+                                    <button type="submit" class="btn1">提交</button>
+                                </div>
+                                <div class="form-right">
+                                    <h3>預約客服須知</h3>
+                                    <br>
+                                    <p>
+                                    <ul>
+                                        <li>網站上任何物品，皆有貨！下單即可！</li>
+                                        <li>若有其他顧慮，請在備註中填寫相關問題，以便服務人員快速解決您的疑慮！</li>
+                                        <li>備註中麻煩寫上方便聯絡的時間。</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function showForm(formId) {
+                    var forms = document.querySelectorAll('form');
+                    forms.forEach(function (form) {
+                        form.classList.remove('active1');
+                    });
+                    document.getElementById(formId).classList.add('active1');
+
+                    var indicator = document.getElementById('Indicator1');
+                    var spanWidth = document.querySelector('.form-btn1 span').offsetWidth;
+                    var position = Array.from(document.querySelectorAll('.form-btn1 span')).findIndex(span => span.textContent === document.querySelector('form#' + formId + ' h2').textContent);
+                    indicator.style.transform = 'translateX(' + (position * spanWidth) + 'px)';
+                }
+            </script>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <img src="android.png"> <img src="apple.png" alt="">
+                            <p>Download App for Android and ios mobile phone.</p>
+                        </div>
+                        <div class="footer-col-2">
+                            <img src="YCH-1.png">
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                                <li>LINE</li>
+                                <li>YouTube</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function showForm(formId) {
+                    var forms = document.querySelectorAll('form');
+                    forms.forEach(function (form) {
+                        form.classList.remove('active1');
+                    });
+                    document.getElementById(formId).classList.add('active1');
+
+                    var indicator = document.getElementById('Indicator1');
+                    if (formId === 'pickup') {
+                        indicator.style.transform = 'translateX(0)';
+                    } else if (formId === 'send') {
+                        indicator.style.transform = 'translateX(100%)';
+                    } else if (formId === 'purchase') {
+                        indicator.style.transform = 'translateX(200%)';
+                    } else if (formId === 'customer-service') {
+                        indicator.style.transform = 'translateX(300%)';
+                    }
+                }
+
+                // Set default active form
+                document.addEventListener('DOMContentLoaded', function () {
+                    showForm('pickup');
+                });
+            </script>
+</body>
+
+</html>
